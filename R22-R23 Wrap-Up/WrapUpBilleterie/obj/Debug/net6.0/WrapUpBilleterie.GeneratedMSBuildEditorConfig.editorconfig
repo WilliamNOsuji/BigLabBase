@@ -1,0 +1,65 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WrapUpBilleterie
+build_property.RootNamespace = WrapUpBilleterie
+build_property.ProjectDir = C:\Users\2079555\Downloads\R22-R23 Wrap-Up\WrapUpBilleterie\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\2079555\Downloads\R22-R23 Wrap-Up\WrapUpBilleterie
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/2079555/Downloads/R22-R23 Wrap-Up/WrapUpBilleterie/Views/Clients/Connexion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xDb25uZXhpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2079555/Downloads/R22-R23 Wrap-Up/WrapUpBilleterie/Views/Clients/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2079555/Downloads/R22-R23 Wrap-Up/WrapUpBilleterie/Views/Clients/Inscription.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xJbnNjcmlwdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2079555/Downloads/R22-R23 Wrap-Up/WrapUpBilleterie/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2079555/Downloads/R22-R23 Wrap-Up/WrapUpBilleterie/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2079555/Downloads/R22-R23 Wrap-Up/WrapUpBilleterie/Views/Spectacles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY3RhY2xlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2079555/Downloads/R22-R23 Wrap-Up/WrapUpBilleterie/Views/Spectacles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY3RhY2xlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2079555/Downloads/R22-R23 Wrap-Up/WrapUpBilleterie/Views/Spectacles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY3RhY2xlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2079555/Downloads/R22-R23 Wrap-Up/WrapUpBilleterie/Views/Spectacles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY3RhY2xlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2079555/Downloads/R22-R23 Wrap-Up/WrapUpBilleterie/Views/Spectacles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY3RhY2xlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2079555/Downloads/R22-R23 Wrap-Up/WrapUpBilleterie/Views/Spectacles/IndexAncien.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY3RhY2xlc1xJbmRleEFuY2llbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2079555/Downloads/R22-R23 Wrap-Up/WrapUpBilleterie/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 

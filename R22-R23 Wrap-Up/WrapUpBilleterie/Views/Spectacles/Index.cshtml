@@ -1,0 +1,64 @@
+﻿@model IEnumerable<WrapUpBilleterie.Models.VwSpectaclesRepresentationSpectateur>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Debut)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NbRepresentation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NbBilletsVendus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prix)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Debut)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NbRepresentation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NbBilletsVendus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prix)
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.SpectacleId">Details</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
