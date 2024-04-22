@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -30,6 +31,23 @@ namespace WrapUpBilleterie.Controllers
 
         public async Task<IActionResult> Index()
         {
+            string prenomNom = "Visiteur"; // Valeur par défaut
+
+            // Vérifiez si l'utilisateur est authentifié
+            if (User.Identity.IsAuthenticated)
+            {
+                // Récupérez le prénom et le nom du client connecté à partir du contexte
+                string courriel = User.FindFirstValue(ClaimTypes.Name);
+                var client = await _context.Clients.FirstOrDefaultAsync(x => x.Courriel == courriel);
+
+                if (client != null)
+                {
+                    prenomNom = $"{client.Prenom} {client.Nom}";
+                }
+            }
+
+            ViewData["ClientPrenomNom"] = prenomNom;
+
             return _context.VwSpectaclesRepresentationSpectateurs != null ?
                         View(await _context.VwSpectaclesRepresentationSpectateurs.ToListAsync()) :
                         Problem("Entity set 'R22_BilleterieContext.Spectacles'  is null.");
