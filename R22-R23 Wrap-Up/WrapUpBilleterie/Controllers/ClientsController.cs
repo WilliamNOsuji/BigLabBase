@@ -114,7 +114,7 @@ namespace WrapUpBilleterie.Controllers
             ClaimsPrincipal principal = new ClaimsPrincipal(identity);
             await HttpContext.SignInAsync(principal);
 
-            return RedirectToAction("Index", "Clients");
+            return RedirectToAction("Index", "Spectacles");
         }
 
         [HttpGet]
@@ -122,7 +122,7 @@ namespace WrapUpBilleterie.Controllers
         {
             // Cette ligne mange le cookie 🍪 Slurp
             await HttpContext.SignOutAsync();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index" , "Spectacles");
         }
 
     }

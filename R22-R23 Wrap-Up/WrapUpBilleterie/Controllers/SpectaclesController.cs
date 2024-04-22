@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using WrapUpBilleterie.Data;
 using WrapUpBilleterie.Models;
+using WrapUpBilleterie.ViewModels;
 
 namespace WrapUpBilleterie.Controllers
 {
@@ -35,7 +36,7 @@ namespace WrapUpBilleterie.Controllers
         }
 
         // GET: Spectacles/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> DetailsAncien(int? id)
         {
             if (id == null || _context.Spectacles == null)
             {
@@ -50,6 +51,44 @@ namespace WrapUpBilleterie.Controllers
             }
 
             return View(spectacle);
+        }
+
+        // GET: Spectacles/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null || _context.Spectacles == null)
+            {
+                return NotFound();
+            }
+            var view = await _context.VwSpectaclesRepresentationSpectateurs.Where(x => x.SpectacleId == id).FirstOrDefaultAsync();
+            if (view == null)
+            {
+                return NotFound();
+            }
+            var representations = await _context.Representations.Where(x => x.SpectacleId == id).ToListAsync();
+            if (representations == null)
+            {
+                return NotFound();
+            }
+            var afficheContent = await _context.Affiches.Where(x => x.SpectacleId == id).FirstOrDefaultAsync();
+            if (afficheContent == null)
+            {
+                return NotFound();
+            }
+
+            // Revision on the following
+
+            string affiche = await _context.Affiches
+                .Where(x => x.SpectacleId == id)
+                .Select(x => x.AfficheContent == null ? null : $"data:image/png;base64, {Convert.ToBase64String(x.AfficheContent)}"
+            ).FirstOrDefaultAsync();
+
+            SpectaclesAfficheRepresentationViewModel sARVM = new SpectaclesAfficheRepresentationViewModel();
+            sARVM.vwSpectacleVue = view;
+            sARVM.Representations = representations;
+            sARVM.AfficheContent = affiche;
+
+            return View(sARVM);
         }
 
         // GET: Spectacles/Create

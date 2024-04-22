@@ -3,9 +3,16 @@
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var isAuthenticated = User.Identity.IsAuthenticated;
+    var greeting = isAuthenticated ? $"Hello {user.Nom} {user.Prenom}" : "Hello visitor";
 }
+<a asp-controller="Clients" asp-action="Inscription">Inscription</a> | <a asp-controller="Clients" asp-action="Connexion">Connexion</a> | <a asp-controller="Clients" asp-action="Deconnexion">Deconnexion</a>
 
 <h1>Index</h1>
+<h2>
+    @greeting
+</h2>
 
 <p>
     <a asp-action="Create">Create New</a>

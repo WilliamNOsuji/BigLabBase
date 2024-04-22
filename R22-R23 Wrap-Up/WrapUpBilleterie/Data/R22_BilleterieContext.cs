@@ -17,6 +17,7 @@ namespace WrapUpBilleterie.Data
         {
         }
 
+        public virtual DbSet<Affiche> Affiches { get; set; } = null!;
         public virtual DbSet<Billet> Billets { get; set; } = null!;
         public virtual DbSet<Changelog> Changelogs { get; set; } = null!;
         public virtual DbSet<Client> Clients { get; set; } = null!;
@@ -34,6 +35,16 @@ namespace WrapUpBilleterie.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Affiche>(entity =>
+            {
+                entity.Property(e => e.Identifiant).HasDefaultValueSql("(newid())");
+
+                entity.HasOne(d => d.Spectacle)
+                    .WithMany(p => p.Affiches)
+                    .HasForeignKey(d => d.SpectacleId)
+                    .HasConstraintName("FK_Affiche_SpectacleID");
+            });
+
             modelBuilder.Entity<Billet>(entity =>
             {
                 entity.HasOne(d => d.Client)

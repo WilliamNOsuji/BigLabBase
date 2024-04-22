@@ -12,6 +12,7 @@ namespace WrapUpBilleterie.Models
     {
         public Spectacle()
         {
+            Affiches = new HashSet<Affiche>();
             Representations = new HashSet<Representation>();
         }
 
@@ -27,6 +28,8 @@ namespace WrapUpBilleterie.Models
         [Column(TypeName = "money")]
         public decimal Prix { get; set; }
 
+        [InverseProperty("Spectacle")]
+        public virtual ICollection<Affiche> Affiches { get; set; }
         [InverseProperty("Spectacle")]
         public virtual ICollection<Representation> Representations { get; set; }
     }

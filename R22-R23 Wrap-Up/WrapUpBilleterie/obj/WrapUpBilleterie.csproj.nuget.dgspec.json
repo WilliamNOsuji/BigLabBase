@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\2079555\\Downloads\\R22-R23 Wrap-Up\\WrapUpBilleterie\\WrapUpBilleterie.csproj": {}
+    "C:\\Users\\2079555\\Desktop\\BigLabBase\\R22-R23 Wrap-Up\\WrapUpBilleterie\\WrapUpBilleterie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\2079555\\Downloads\\R22-R23 Wrap-Up\\WrapUpBilleterie\\WrapUpBilleterie.csproj": {
+    "C:\\Users\\2079555\\Desktop\\BigLabBase\\R22-R23 Wrap-Up\\WrapUpBilleterie\\WrapUpBilleterie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\2079555\\Downloads\\R22-R23 Wrap-Up\\WrapUpBilleterie\\WrapUpBilleterie.csproj",
+        "projectUniqueName": "C:\\Users\\2079555\\Desktop\\BigLabBase\\R22-R23 Wrap-Up\\WrapUpBilleterie\\WrapUpBilleterie.csproj",
         "projectName": "WrapUpBilleterie",
-        "projectPath": "C:\\Users\\2079555\\Downloads\\R22-R23 Wrap-Up\\WrapUpBilleterie\\WrapUpBilleterie.csproj",
+        "projectPath": "C:\\Users\\2079555\\Desktop\\BigLabBase\\R22-R23 Wrap-Up\\WrapUpBilleterie\\WrapUpBilleterie.csproj",
         "packagesPath": "C:\\Users\\2079555\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\2079555\\Downloads\\R22-R23 Wrap-Up\\WrapUpBilleterie\\obj\\",
+        "outputPath": "C:\\Users\\2079555\\Desktop\\BigLabBase\\R22-R23 Wrap-Up\\WrapUpBilleterie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\2079555\\AppData\\Roaming\\NuGet\\NuGet.Config",

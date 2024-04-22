@@ -1,4 +1,4 @@
-﻿@model WrapUpBilleterie.Models.Spectacle
+﻿@model WrapUpBilleterie.ViewModels.SpectaclesAfficheRepresentationViewModel
 
 @{
     ViewData["Title"] = "Details";
@@ -12,32 +12,39 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nom)
+            @Html.DisplayNameFor(model => model.vwSpectacleVue.Nom)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nom)
+            @Html.DisplayFor(model => model.vwSpectacleVue.Nom)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Debut)
+            @Html.DisplayNameFor(model => model.vwSpectacleVue.Debut)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Debut)
+            @Html.DisplayFor(model => model.vwSpectacleVue.Debut)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Fin)
+            @Html.DisplayNameFor(model => model.vwSpectacleVue.Fin)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Fin)
+            @Html.DisplayFor(model => model.vwSpectacleVue.Fin)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Prix)
+            @Html.DisplayNameFor(model => model.vwSpectacleVue.Prix)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Prix)
+            @Html.DisplayFor(model => model.vwSpectacleVue.Prix)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AfficheContent)
+        </dt>
+        <dd class="col-sm-10">
+            <img alt="@(Model.vwSpectacleVue.Nom)" src="@(Model.AfficheContent)"/>
+
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.SpectacleId">Edit</a> |
+    <a asp-action="Edit" asp-route-id="@Model?.vwSpectacleVue.SpectacleId">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>
